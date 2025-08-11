@@ -1,0 +1,26 @@
+.login-button {
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4f46e5; /* Indigo-600 */
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #4338ca; /* Indigo-700 */
+}
+
+.login-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.login-button:disabled {
+  background-color: #a5b4fc; /* Indigo-400 */
+  cursor: not-allowed;
+  box-shadow: none;
+}
